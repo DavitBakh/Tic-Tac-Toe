@@ -112,7 +112,7 @@ namespace Tic_Tac_Toe.UI
                     if (copBoard[i, j] == emptyChar)
                     {
                         copBoard[i, j] = computerChar;
-                        int score = MinMax(copBoard, User);
+                        int score = MiniMax(copBoard, User);
                         copBoard[i, j] = emptyChar;
                         if (score > bestScore)
                         {
@@ -158,7 +158,7 @@ namespace Tic_Tac_Toe.UI
                         if (board[i, j] == emptyChar)
                         {
                             board[i, j] = computerChar;
-                            int score = MinMax(board, User);
+                            int score = MiniMax(board, User);
                             board[i, j] = emptyChar;
                             bestScore = Math.Max(bestScore, score);
                         }
@@ -176,7 +176,7 @@ namespace Tic_Tac_Toe.UI
                         if (board[i, j] == emptyChar)
                         {
                             board[i, j] = userChar;
-                            int score = MinMax(board, AI);
+                            int score = MiniMax(board, AI);
 
                             board[i, j] = emptyChar;
                             bestScore = Math.Min(bestScore, score);
