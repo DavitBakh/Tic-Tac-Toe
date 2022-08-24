@@ -1,0 +1,17 @@
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\bin\Debug\net6.0-windows\Tic Tac Toe.UI.exe
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\bin\Debug\net6.0-windows\Tic Tac Toe.UI.deps.json
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\bin\Debug\net6.0-windows\Tic Tac Toe.UI.runtimeconfig.json
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\bin\Debug\net6.0-windows\Tic Tac Toe.UI.dll
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\bin\Debug\net6.0-windows\Tic Tac Toe.UI.pdb
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic Tac Toe.UI.csproj.AssemblyReference.cache
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic_Tac_Toe.UI.Form1.resources
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic Tac Toe.UI.csproj.GenerateResource.cache
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic Tac Toe.UI.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic Tac Toe.UI.AssemblyInfoInputs.cache
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic Tac Toe.UI.AssemblyInfo.cs
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic Tac Toe.UI.csproj.CoreCompileInputs.cache
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic Tac Toe.UI.dll
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\refint\Tic Tac Toe.UI.dll
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic Tac Toe.UI.pdb
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\Tic Tac Toe.UI.genruntimeconfig.cache
+E:\Cragravorum\VS Cragirner\Tic Tac Toe.UI\Tic Tac Toe.UI\obj\Debug\net6.0-windows\ref\Tic Tac Toe.UI.dll
