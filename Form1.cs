@@ -100,7 +100,7 @@ namespace Tic_Tac_Toe.UI
                         }
                         if (isDraw(board))
                         {
-                            MessageBox.Show("Ничя");
+                            MessageBox.Show("Draw");
                             Close();
                         }
 
