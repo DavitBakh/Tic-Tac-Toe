@@ -10,7 +10,6 @@ namespace Tic_Tac_Toe.UI
         bool AI = true;
 
 
-
         char[,] board;
         bool canMove = true;
 
@@ -33,6 +32,20 @@ namespace Tic_Tac_Toe.UI
                 { btn4, btn5, btn6 },
                 { btn7, btn8, btn9 }
              };
+
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            ISComputerFirst(false);
+            UpdateField();
+        }
+        public void ISComputerFirst(bool b)
+        {
+            if (b)
+            {
+                canMove = false;
+                ComputerMove(board);
+            }
 
         }
 
@@ -80,7 +93,6 @@ namespace Tic_Tac_Toe.UI
                         }
 
                         ComputerMove(board);
-                        UpdateField();
                         if (isWin(computerChar, board))
                         {
                             MessageBox.Show("Win Player " + computerChar);
@@ -112,7 +124,7 @@ namespace Tic_Tac_Toe.UI
                     if (copBoard[i, j] == emptyChar)
                     {
                         copBoard[i, j] = computerChar;
-                        int score = MiniMax(copBoard, User);
+                        int score = MiniMax(copBoard, 0, User);
                         copBoard[i, j] = emptyChar;
                         if (score > bestScore)
                         {
@@ -129,23 +141,21 @@ namespace Tic_Tac_Toe.UI
             {
                 board[y, x] = computerChar;
                 canMove = true;
+                UpdateField();
             }
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            UpdateField();
-        }
 
-        public int MiniMax(char[,] board, bool minMax)
-        {
+
+        public int MiniMax(char[,] board, int depth, bool minMax)
+        { 
             if (isWin(userChar, board))
-                return -10;
+                return -100 - depth;
             if (isWin(computerChar, board))
-                return 10;
+                return 100 - depth;
             if (isDraw(board))
-                return 0;
+                return 0 - depth ;
 
 
             if (minMax)
@@ -158,8 +168,12 @@ namespace Tic_Tac_Toe.UI
                         if (board[i, j] == emptyChar)
                         {
                             board[i, j] = computerChar;
-                            int score = MiniMax(board, User);
+                            int score = MiniMax(board, depth + 1, User);
                             board[i, j] = emptyChar;
+
+                            if (score == (100 - (depth + 1)))
+                                return score;
+
                             bestScore = Math.Max(bestScore, score);
                         }
                     }
@@ -176,9 +190,13 @@ namespace Tic_Tac_Toe.UI
                         if (board[i, j] == emptyChar)
                         {
                             board[i, j] = userChar;
-                            int score = MiniMax(board, AI);
+                            int score = MiniMax(board, depth + 1, AI);
 
                             board[i, j] = emptyChar;
+
+                            if (score == (-100 - (depth + 1)))
+                                return score;
+
                             bestScore = Math.Min(bestScore, score);
                         }
                     }
